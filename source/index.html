@@ -6,19 +6,21 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-logo"><img src="#" alt="Логотип">Логотип "Барбершоп Бородинский"</a>
-    <nav class="page-navigation">
-      <button>Открыть меню</button>
-      <button>Закрыть меню</button>
-      <ul>
-        <li><a href="">Главная</a></li>
-        <li><a href="">Наши работы</a></li>
-        <li><a href="">Записаться</a></li>
-        <li><a href="">Контакты</a></li>
-        <li><a href="">HTML Academy</a></li>
+    <a class="page-header__logo-link">
+      <img src="#" class="page-header__logo-img" alt="Логотип">Логотип "Барбершоп Бородинский"
+    </a>
+    <nav class="main-nav">
+      <button type="button" class="main-nav__toggle">Открыть меню</button>
+      <button type="button" class="main-nav__close close">Закрыть меню</button>
+      <ul class="site-list main-nav__list-site">
+        <li class="site-list__item"><a href="">Главная</a></li>
+        <li class="site-list__item"><a href="">Наши работы</a></li>
+        <li class="site-list__item"><a href="">Записаться</a></li>
+        <li class="site-list__item"><a href="">Контакты</a></li>
+        <li class="site-list__item"><a href="">HTML Academy</a></li>
       </ul>
-      <ul>
-        <li><a href="">Войти</a></li>
+      <ul class="user-list main-nav__list-user">
+        <li class="user-list__item"><a href="">Войти</a></li>
       </ul>
     </nav>
   </header>
