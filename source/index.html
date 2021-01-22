@@ -13,7 +13,7 @@
       <button type="button" class="main-nav__toggle">Открыть меню</button>
       <button type="button" class="main-nav__close close">Закрыть меню</button>
       <ul class="site-list main-nav__list-site">
-        <li class="site-list__item"><a href="">Главная</a></li>
+        <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
         <li class="site-list__item"><a href="">Наши работы</a></li>
         <li class="site-list__item"><a href="">Записаться</a></li>
         <li class="site-list__item"><a href="">Контакты</a></li>
@@ -25,136 +25,134 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1>Барбершоп «Бородинский»</h1>
-    <section class="page-static">
-      <h2>Статистика Барбершопа</h2>
-      <header class="">
-        <h2></h2>
-        <b>Стрижка у нас это выгодно!</b>
-        <p>Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-        <p>
+    <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+    <section class="stats">
+      <h2 class="visually-hidden">Статистика Барбершопа</h2>
+      <header class="stats__header">
+        <b class="stats__slogan">Стрижка у нас это выгодно!</b>
+        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <p class="stats__legend stats__legend--top">
           <sup>*</sup>
            — приведённые данные ложь
         </p>
       </header>
-      <table>
+      <table class="stats__list">
         <tr>
-          <td>1 500 <sup>*</sup></td>
-          <td>рублей вложений</td>
+          <td class="stats__value">1 500 <sup>*</sup></td>
+          <td class="stats__field">рублей вложений</td>
         </tr>
         <tr>
-          <td>7 200</td>
-          <td>секунд времени мастера</td>
+          <td class="stats__value">7 200</td>
+          <td class="stats__field">секунд времени мастера</td>
         </tr>
         <tr>
-          <td>90 000</td>
-          <td>постриженных
-            волос</td>
+          <td class="stats__value">90 000</td>
+          <td class="stats__field">постриженных волос</td>
         </tr>
         <tr>
-          <td>500 000 <sup>*</sup></td>
-          <td>лайков и
-            комплиментов</td>
+          <td class="stats__value">500 000<sup>*</sup></td>
+          <td class="stats__field">лайков и комплиментов</td>
         </tr>
       </table>
-      <p>
+      <p class="stats__legend stats__legend--bottom">
         <sup>*</sup>
         — приведённые данные ложь
       </p>
     </section>
-    <section class="page-advantages">
-      <h2>Наши преимущества</h2>
-      <ul>
-        <li>
-          <h3>БЫСТРО</h3>
-          <p>
+    <section class="advantages">
+      <div class="advantages__wrapper slider">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="advantages__list slider__list">
+        <li class="advantages__item advantages__item--fast slider__item">
+          <h3 class="advantages__title">БЫСТРО</h3>
+          <p class="advantages__description">
             Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки
           </p>
         </li>
-        <li>
-          <h3>КРУТО</h3>
-          <p>
+        <li class="advantages__item advantages__item--cool slider__item">
+          <h3 class="advantages__title">КРУТО</h3>
+          <p class="advantages__description">
             Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино.
             Во всяком случае внешне.
           </p>
         </li>
-        <li>
-          <h3>ДОРОГО</h3>
-          <p>
+        <li class="advantages__item advantages__item--price slider__item">
+          <h3 class="advantages__title">ДОРОГО</h3>
+          <p class="advantages__description">
             Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
           </p>
         </li>
       </ul>
-      <p>
-        <sup>*</sup>
+      <p class="slider__toggles advantages__toggles">
+        <button type="button" class="slider__toggle">1</button>
+        <button type="button" class="slider__toggle">2</button>
+        <button type="button" class="slider__toggle">3</button>
       </p>
-      <p class="advantages__toggles">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-      </p>
+      </div>
     </section>
-    <section class="page-news">
-      <h2>Новости и акции</h2>
-      <ul>
-        <li>
-          <time>
-            <b>29</b>
+    <section class="news">
+      <h2 class="news__title">Новости и акции</h2>
+      <ul class="news__list">
+        <li class="news__item">
+          <time class="news__time">
+            <b class="news__day">29</b>
             сент
           </time>
-          <p>
+          <p class="news__text">
             Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.
           </p>
         </li>
-        <li>
-          <time>
-            <b>19</b>
+        <li class="news__item">
+          <time class="news__time">
+            <b class="news__day">19</b>
             сент
           </time>
-          <p>
+          <p class="news__text">
             В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!
           </p>
         </li>
-        <li>
-          <time>
-            <b>9</b>
+        <li class="news__item">
+          <time class="news__time">
+            <b class="news__day">9</b>
             сент
           </time>
-          <p>
+          <p class="news__text">
             Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
           </p>
         </li>
       </ul>
-      <a href="">ПОКАЗАТЬ ВСЕ</a>
+      <a href="" class="news__show-all button">ПОКАЗАТЬ ВСЕ</a>
     </section>
-    <section class="page-review">
-      <h2>Отзывы о нас</h2>
-      <a href="">Оставить свой</a>
-      <ul>
-        <li>
-          <p><img src="#" alt="Фото"></p>
-          <b>Трэвис Баркер</b>
-          <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+      <h2 class="reviews__title">Отзывы о нас</h2>
+      <a href="" class="reviews__write button">Оставить свой</a>
+      <ul class="reviews__list slider__list">
+        <li class="reviews__item slider__item">
+          <p class="reviews__foto"><img class="reviews__foto-img" src="#" alt="Фото"></p>
+          <b class="reviews__name">Трэвис Баркер</b>
+          <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
             чтобы было видно новую татуировку!</p>
         </li>
-        <li>
-          <p><img src="#" alt="Фото"></p>
-          <b>Джон Смит</b>
-          <p>Отличную стрижку мне сделали ребята.</p>
+        <li class="reviews__item slider__item">
+          <p class="reviews__foto"><img class="reviews__foto-img" src="#" alt="Фото"></p>
+          <b class="reviews__name">Джон Смит</b>
+          <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
         </li>
-        <li>
-          <p><img src="#" alt="Фото"></p>
-          <b>Иван Бородайло</b>
-          <p>В Бородинском ваша борода в надёжных руках!</p>
+        <li class="reviews__item slider__item">
+          <p class="reviews__foto"><img class="reviews__foto-img" src="#" alt="Фото"></p>
+          <b class="reviews__name">Иван Бородайло</b>
+          <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
         </li>
       </ul>
-      <button>Предыдущий отзыв</button>
-      <button>Следующий отзыв</button>
-      <p class="page-review__toggles">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+      <button type="button" class="reviews__prev">Предыдущий отзыв</button>
+      <button type="button" class="reviews__next">Следующий отзыв</button>
+      <p class="slider__toggles reviews__toggles">
+        <button type="button" class="slider__toggle">1</button>
+        <button type="button" class="slider__toggle">2</button>
+        <button type="button" class="slider__toggle">3</button>
       </p>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -191,17 +189,17 @@
     <form>
       <b>Введите свой логин и пароль, чтобы войти</b>
       <p>
-        <label></label>
+        <label for=""></label>
         <input type="text" placeholder="Логин">
       </p>
       <p>
-        <label></label>
+        <label for=""></label>
         <input type="password" placeholder="Пароль">
       </p>
       <p>
         <input type="checkbox">
         <span></span>
-        <label></label>
+        <label for=""></label>
         <a>Я забыл пароль!</a>
       </p>
     </form>
