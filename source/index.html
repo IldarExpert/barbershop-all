@@ -187,26 +187,26 @@
     </div>
   </footer>
   <section class="page-login">
-    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-    <form>
-      <b>Введите свой логин и пароль, чтобы войти</b>
-      <p>
+    <h2 class="page-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+    <form class="page-login__form">
+      <b class="page-login__form-text">Введите свой логин и пароль, чтобы войти</b>
+      <p class="page-login__login">
         <label for=""></label>
-        <input type="text" placeholder="Логин">
+        <input class="page-login__login-input" type="text" placeholder="Логин">
       </p>
-      <p>
+      <p class="page-login__password">
         <label for=""></label>
-        <input type="password" placeholder="Пароль">
+        <input class="page-login__password-input" type="password" placeholder="Пароль">
       </p>
-      <p>
-        <input type="checkbox">
-        <span></span>
+      <p class="page-login__checkbox">
+        <input class="page-login__checkbox-input" type="checkbox">
+        <span class=""></span>
         <label for=""></label>
-        <a>Я забыл пароль!</a>
+        <a class="page-login__remember-link" href="">Я забыл пароль!</a>
       </p>
     </form>
-    <button>Войти</button>
-    <button>Закрыть</button>
+    <button type="submit" class="page-login__enter button">Войти</button>
+    <button type="button" class="page-login__close button">Закрыть</button>
   </section>
 </body>
 </html>
