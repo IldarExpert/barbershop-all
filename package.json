@@ -1,7 +1,7 @@
 {
-  "name": "mishka-21",
+  "name": "barbershop-all",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "13.7.2",
@@ -17,6 +17,6 @@
     "source/*.html"
   ],
   "engines": {
-    "node": "12.18.2"
+    "node": "14.15.4"
   }
 }
