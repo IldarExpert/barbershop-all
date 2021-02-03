@@ -1,4 +1,6 @@
 .site-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 
   font-weight: 700;
@@ -9,11 +11,24 @@
 }
 
 .site-list__item {
-
+  background-color: #826550;
 }
 
 .site-list__item a {
   color: #ffffff;
+}
+
+.site-list__item:hover {
+  background-color: #755a46;
+}
+
+.site-list__item:active {
+  background-color: #6a4d38;
+  color: rgba(255,255,255,0.3);
+}
+
+.site-list__item a:active {
+  color: rgba(255,255,255,0.3);
 }
 
 .site-list__item--active {
