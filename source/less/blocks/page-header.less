@@ -5,11 +5,23 @@
 
 .page-header__logo-link {
   height: 85px;
-
 }
 
 .page-header__logo-img {
   width: 226px;
   height: 30px;
+}
 
+@media (min-width: @tablet-width) {
+  .page-header__logo-link {
+    order: 2;
+    height: 400px;
+    background: url("../img/back-tablet.jpg") repeat 50% 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-link {
+    height: 650px;
+  }
 }
