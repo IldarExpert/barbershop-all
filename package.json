@@ -7,7 +7,7 @@
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
     "gulp": "^4.0.2",
-    "gulp-less": "4.0.1",
+    "gulp-less": "^4.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
     "gulp-sourcemaps": "3.0.0",
@@ -40,9 +40,7 @@
   },
   "version": "1.0.0",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-less": "^4.0.1"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IldarExpert/barbershop-all.git"
