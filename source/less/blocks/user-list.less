@@ -1,7 +1,5 @@
 .user-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
   font-size: 18px;
   line-height: 24px;
 }
@@ -21,9 +19,21 @@
 
 .user-list__item:active {
   background-color: #6a4d38;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .user-list__item a:active {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    width: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    width: 160px;
+  }
 }
