@@ -12,6 +12,9 @@
   color: #ffffff;
 }
 
+.user-list__item a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .user-list__item:hover {
   background-color: #755a46;
@@ -22,13 +25,25 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.user-list__item a:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 @media (min-width: @tablet-width) {
   .user-list {
     width: 60px;
+  }
+
+  .user-list__item {
+    background-color: #000000;
+
+    &:hover {
+      background-color: #000000;
+    }
+
+    & a:hover {
+      color: #826550;
+    }
+
+    &:active {
+      background-color: #000000;
+    }
   }
 }
 

@@ -1,11 +1,16 @@
 .stats {
-
+  width: 320px;
+  margin: 0 auto;
 }
 
 .stats__header {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .stats__slogan {
@@ -13,7 +18,6 @@
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-
 }
 
 .stats__intro {
@@ -25,7 +29,7 @@
 }
 
 .stats__legend--top {
-display: none;
+  display: none;
 }
 
 .stats__legend--bottom {
@@ -35,6 +39,7 @@ display: none;
 .stats__list {
   border-collapse: collapse;
   margin: auto;
+  width: 100%;
 }
 
 .stats__list tr:nth-child(1) {
@@ -64,4 +69,39 @@ display: none;
   line-height: 18px;
   text-align: right;
   color: #f7f4f1;
+}
+
+@media (min-width: @tablet-width) {
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+  }
+
+  .stats-list {
+    display: flex;
+  }
+
+  .stats__slogan {
+    text-transform: lowercase;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats {
+    width: 960px;
+    margin-top: -160px;
+    display: flex;
+  }
+
+  .stats__header {
+    width: 240px;
+  }
+
+  .stats__list {
+    width: 640px;
+  }
 }
