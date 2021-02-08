@@ -1,15 +1,57 @@
 .main-nav {
-  background-color: #6a4d38;
+  position: relative;
+  background-color: #826550;
   width: 320px;
   margin: 0 auto;
+  min-height: 51px;
 }
 
 .main-nav__toggle {
-  background-image: url("../img/main-nav__toggle.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: #6a4d38;
+
+
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #624530;
+  }
 }
 
-.main-nav__close {
+.main-nav__closed .main-nav__toggle {
+  background-image: url("../img/main-nav__toggle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 20px;
 
+  &:active {
+    background-image: url("../img/main-nav__toggle-active.svg");
+  }
+}
+
+.main-nav__opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  background-image: url("../img/cross-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 25px;
+
+  &:active {
+    background-image: url("../img/cross-icon-active.svg");
+  }
 }
 
 .main-nav__wrapper {
