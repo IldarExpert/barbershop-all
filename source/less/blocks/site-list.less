@@ -7,22 +7,28 @@
 }
 
 .site-list__item {
-  background-color: #826550;
+
 
   & a {
     color: #ffffff;
+    background-color: #826550;
+
+    border-top: 1px solid #886e5b;
+    border-bottom: 1px solid #71543f;
+
+    display: block;
+    padding: 12px 21px;
+    padding-bottom: 13px;
   }
 
-  & a:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
-  &:hover {
+  & a[href]:hover {
     background-color: #755a46;
+    border-top-color: #755a46;
   }
 
-  &:active {
+  & a[href]:active {
     background-color: #6a4d38;
+    border-top-color: #6a4d38;
     color: rgba(255, 255, 255, 0.3);
   }
 }
