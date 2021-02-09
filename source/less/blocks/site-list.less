@@ -39,23 +39,54 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    display: flex;
     width: 570px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .site-list__item {
+    margin-right: 32px;
     background-color: #000000;
 
-    &:hover {
-      background-color: #000000;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+
+        height: 3px;
+        background: #826550;
+      }
+    }
+
+    & a {
+      padding: 0;
+      padding-top: 25px;
+      padding-bottom: 23px;
+      background: none;
+      border: none;
     }
 
     & a:hover {
       color: #826550;
+      background-color: #000000;
+      background: none;
+      border: none;
     }
 
-    &:active {
-      background-color: #000000;
+    & a:active {
+
     }
   }
 }
